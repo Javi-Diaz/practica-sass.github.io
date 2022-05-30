@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png">
+    <meta name="keywords" content="...">
+	<meta name="description" content="...">
+	<meta name="author" content="javi.diaz228@gmail.com">
+	<meta name="robots" content="index"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- JAVASCRIPT -->
+    <script src="main.js" defer></script>
+    <title>Sass</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="navbar">
+        <i class="fas fa-bars btn-menu" id="btn-menu"></i>
+        <nav class="menu-responsive-off menu">
+            <a href="#container-slider">Inicio</a>
+            <a href="#nuestra-historia">Nuestra historia</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#blog">Blog</a>
+            <a href="#footer" class="btn-contact">Contacto</a>
+        </nav>
+
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="logo"><h1>La Esperanza</h1>
+        </a>
+
+        
+    </header>
+
+    <!-- PRINCIPAL -->
+    <section class="container-slider" id="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="img/slider/desayuno.jpg" alt="desayuno" class="slider__img">
+                <h2>Desayuno</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ipsam beatae consectetur placeat in commodi soluta harum ea temporibus vitae officiis unde, doloribus suscipit adipisci cumque fuga incidunt excepturi reiciendis.</p>
+            </div>
+            <div class="slider__section">
+                <img src="img/slider/almuerzo.jpg" alt="almuerzo" class="slider__img">
+                <h2>Almuerzo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ipsam beatae consectetur placeat in commodi soluta harum ea temporibus vitae officiis unde, doloribus suscipit adipisci cumque fuga incidunt excepturi reiciendis.</p>
+            </div>
+            <div class="slider__section">
+                <img src="img/slider/merienda.jpg" alt="merienda" class="slider__img">
+                <h2>Merienda</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ipsam beatae consectetur placeat in commodi soluta harum ea temporibus vitae officiis unde, doloribus suscipit adipisci cumque fuga incidunt excepturi reiciendis.</p>
+            </div>
+            <div class="slider__section">
+                <img src="img/slider/cena.jpg" alt="cena" class="slider__img">
+                <h2>Cena</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat ipsam beatae consectetur placeat in commodi soluta harum ea temporibus vitae officiis unde, doloribus suscipit adipisci cumque fuga incidunt excepturi reiciendis.</p>
+            </div>
+        </div>
+        <div class="fa-solid fa-circle-chevron-left" id="btn-left"></div>
+        <div class="fa-solid fa-circle-chevron-right" id="btn-right"></div>
+    </section>
+
+    <!-- SECTION 1: NUESTRA HISTORIA -->
+    <section class="nuestra-historia" id="nuestra-historia">
+            <img src="img/fondo8.jpg" alt="imagen-de-fondo">
+            <h3>NUESTRA HISTORIA</h3>
+            <h2>La <span>Esperanza</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quisquam beatae corrupti provident error pariatur excepturi? Reiciendis nihil facere maiores eum quasi similique corporis rerum laborum, facilis sequi vel a.</p>
+    </section>
+
+    <!-- SECTION 2: OFERTAS -->
+    <section class="ofertas" id="ofertas">
+        <h2>Ofertas</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia natus magni deleniti molestiae sed iusto debitis. Facere aliquid optio minima pariatur sint nobis nihil, saepe distinctio perferendis provident tenetur? Ex!</p>
+        <a href="#">Más información.</a>
+        <div class="box-img">
+            <img src="img/ofertas/ofertas.jpg" alt="ofertas">
+            <p>Desayuno o merienda</p>
+        </div>
+        <div class="box-img">
+            <img src="img/ofertas/ofertas2.jpg" alt="ofertas">
+            <p>Almuerzo o cena</p>
+        </div>
+        <div class="box-img">
+            <img src="img/ofertas/ofertas3.jpg" alt="ofertas">
+            <p>Almuerzo o cena</p>
+        </div>
+    </section>
+
+    <!-- SECTION 2: BLOG -->
+    <section class="blog" id="blog">
+        <h3>Blog</h3>
+        <a href="index.html" class="blog_logo">
+            <img src="img/logo.png" alt="logo">
+            <h2>La Esperanza</h2>
+        </a>
+        <img src="img/blog/blog.jpg" alt="blog">
+        <img src="img/blog/blog2.jpg" alt="blog-2">
+        <img src="img/blog/blog3.jpg" alt="blog-3">
+        <img src="img/blog/blog4.jpg" alt="blog-4">
+        <img src="img/blog/blog5.jpg" alt="blog-5">
+    </section>   
+    
+    <!-- FOOTER -->
+    <footer class="footer" id="footer">
+        <img src="img/fondo-bg2.jpg" class="fondo-footer" alt="fondo-footer">
+
+        <div class="cajas-footer">
+            <a href="index.html" class="cabezera-footer">
+                <h3>La Esperanza</h3>
+                <img src="img/logo.png" alt="logo">
+            </a>
+
+            <div class="contactanos">
+                <h3>Contactanos</h3>
+                <p><i class="fab fa-google iconos-footer"></i>email@gmail.com</p>
+                <p><i class="fab fa-whatsapp iconos-footer"></i>+54 1122334455</p>
+            </div>
+    
+            <div class="diasHorarios">
+                <h3>Dias y horarios</h3>
+                <p>Lunes a Sabado</p>
+                <p>9:00 AM - 8:30 PM</p>
+            </div>
+    
+            <div class="secciones">
+                <h3>Secciones</h3>
+                <a href="#container-slider">Inicio</a>
+                <a href="#nuestra-historia">Nuestra historia</a>
+                <a href="#ofertas">Ofertas</a>
+                <a href="#blog">Blog</a>
+                <a href="#footer" class="btn-contact">Contacto</a>
+            </div>
+        </div>
+        
+
+        <div class="final-footer">
+            <p class="mb-0 pb-3">© 2022 Empresa, Inc. Todos los derechos reservados.</p>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>            
+        </div>
+    </footer>
+</body>
+</html>
