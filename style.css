@@ -22,7 +22,7 @@
 }
 .navbar .btn-menu {
   font-size: 26px;
-  margin-left: 10px;
+  margin-left: 15px;
   color: #fff;
 }
 .navbar .menu-responsive-off {
@@ -86,20 +86,16 @@
   text-align: center;
 }
 .container-slider .slider__section h2 {
-  padding-left: 0.5rem;
   font-size: 26px;
-}
-.container-slider .slider__section p {
-  padding-left: 0.5rem;
 }
 .container-slider .slider__img {
   width: 100%;
   height: 500px;
-  object-fit: cover;
 }
 .container-slider .slider__img img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .container-slider .fa-solid {
   position: absolute;
@@ -134,7 +130,6 @@
   position: absolute;
   width: 100%;
   height: 200px;
-  object-fit: cover;
   z-index: -10;
   left: 0;
 }
@@ -159,37 +154,31 @@
 }
 
 /* SECTION 2: OFERTAS */
-.ofertas h2 {
-  padding: 0 0.5rem;
+.especiales h2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: center;
+  font-size: 26px;
+  background-image: url("img/fondo-bg.jpg");
+  color: #fff;
 }
-.ofertas p {
-  padding: 0 0.5rem;
-}
-.ofertas a {
-  padding: 0 0.5rem;
-  border: 1px solid #000;
-  padding: 5px 12px;
-  border-radius: 8px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  margin-left: 0.5rem;
-  display: inline-block;
-  color: #000;
-}
-.ofertas .box-img {
+.especiales .box-img {
   height: 435px;
   object-fit: cover;
   text-align: center;
   background-image: url("img/fondo-bg.jpg");
 }
-.ofertas .box-img img {
-  width: 100%;
+.especiales .box-img img {
+  width: 95%;
   height: 400px;
   border-radius: 8px;
+  object-fit: cover;
 }
-.ofertas .box-img p {
+.especiales .box-img p {
   position: relative;
-  font-size: 22px;
+  font-size: 20px;
   background-image: url("img/fondo-bg.jpg");
   color: #fff;
 }
@@ -205,7 +194,7 @@
   object-fit: cover;
 }
 .blog h3 {
-  font-size: 20px;
+  font-size: 23px;
 }
 .blog .blog_logo {
   display: flex;
@@ -225,6 +214,7 @@
 .blog img {
   width: 100%;
   height: 400px;
+  object-fit: cover;
 }
 
 /* FOOTER */
@@ -259,6 +249,7 @@
   flex: 0 0 auto;
   width: 50%;
   padding-top: 2rem;
+  text-align: center;
 }
 .footer .cajas-footer .contactanos h3 {
   font-size: 22px;
@@ -288,6 +279,7 @@
   width: 50%;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 .footer .cajas-footer .secciones h3 {
   font-size: 22px;
@@ -313,6 +305,21 @@
   height: 35px;
 }
 
+/* RESPONSIVE: CELULAR GRANDE */
+@media screen and (min-width: 405px) {
+  /* OFERTAS */
+  .ofertas .box-img {
+    height: 475px;
+  }
+  .ofertas .box-img img {
+    height: 440px;
+  }
+
+  /* BLOG */
+  .blog img {
+    height: 440px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.scss.map */
 
