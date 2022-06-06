@@ -1,0 +1,32 @@
+@use 'variables';
+
+/* PRINCIPAL */
+@mixin posicionIcono($top,$transform){
+    top: $top;
+    transform: $transform;
+}
+
+/* SECTION: NUESTRA HISTORIA */
+@mixin alturaNuestraHistoria($height){
+    height: $height;
+}
+
+/* SECTION 2: ESPECIALES */
+@mixin especialesResponsive($display,$flex-wrap,$justify-content){
+    display: $display;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content;
+}
+
+/* SECTOPM 3: BLOG */
+@mixin blogResponsive{
+    background-image: variables.$fondoMadera;
+		background-size: contain;
+		
+		flex : {
+			direction: row;
+			wrap: wrap;
+		}
+
+		justify-content: space-evenly;
+}

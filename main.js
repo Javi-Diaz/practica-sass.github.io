@@ -25,7 +25,7 @@ function next(){
         slider.style.transition = 'none';
         slider.insertAdjacentElement('beforeend',sliderSectionFirst);
         slider.style.marginLeft = '-100%';
-    },700)
+    },800)
 }
 
 function prev(){
@@ -37,7 +37,7 @@ function prev(){
         slider.style.transition = 'none';
         slider.insertAdjacentElement('afterbegin',sliderSectionLast);
         slider.style.marginLeft = '-100%';
-    },700)
+    },800)
 }
 
 btnRight.addEventListener('click',function(){
@@ -49,12 +49,3 @@ btnLeft.addEventListener('click',function(){
 });
 
 
-// TAPA LOS BTNS DEL SLIDER CUANDO SE ACTIVA EL MENU
-/*menuBtn.addEventListener('click',()=>{
-    btnLeft.style.display = 'none';
-    btnRight.style.display = 'none';
-});
-menuBtn.addEventListener('mouseout',()=>{
-    btnLeft.style.display = 'inline';
-    btnRight.style.display = 'inline';
-});*/
