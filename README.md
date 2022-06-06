@@ -1,4 +1,4 @@
-# practica-sass.github.io
+Práctica sass (Mobile First, Responsive Desktop)
 
  https://javi-diaz.github.io/practica-sass.github.io/
  
