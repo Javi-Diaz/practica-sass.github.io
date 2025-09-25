@@ -24,7 +24,7 @@
   width: 100%;
   height: 65px;
   z-index: -500;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .navbar .btn-menu {
   font-size: 26px;
@@ -102,6 +102,10 @@
 }
 .container-slider .slider .slider__section .slider_text-responsive h2 {
   font-size: 26px;
+  padding: 0 1rem;
+}
+.container-slider .slider .slider__section .slider_text-responsive p {
+  padding: 0 1rem;
 }
 .container-slider .fa-solid {
   position: absolute;
@@ -130,14 +134,16 @@
   margin-bottom: 2rem;
   position: relative;
   width: 100%;
-  height: 200px;
+  overflow: hidden;
+  padding: 1rem;
 }
 .nuestra-historia img {
   position: absolute;
   width: 100%;
-  height: 200px;
+  height: 100%;
   z-index: -10;
   left: 0;
+  object-fit: cover;
 }
 .nuestra-historia h3 {
   margin-bottom: 0.6rem;
@@ -335,7 +341,6 @@
   .especiales .box-img img {
     height: 440px;
   }
-
   /* SECTION 3: BLOG */
   .blog img {
     height: 440px;
@@ -363,7 +368,6 @@
   .especiales .box-img img {
     height: 460px;
   }
-
   /* SECTION 3: BLOG */
   .blog img {
     height: 460px;
@@ -379,11 +383,11 @@
     overflow: hidden;
   }
   .container-slider .slider .slider__section .slider__img {
-    flex: 0 0 360px;
+    flex: 0 0 50%;
     order: 3;
     flex-wrap: nowrap;
     object-position: center;
-    width: 360px;
+    width: 50%;
   }
   .container-slider .slider .slider__section .slider_text-responsive {
     width: 100%;
@@ -406,17 +410,15 @@
     margin: 0 auto;
   }
   .container-slider .fa-solid {
-    top: 58%;
-    transform: translateY(-58%);
+    top: 52%;
+    transform: translateY(-52%);
   }
   .container-slider .fa-circle-chevron-left {
-    left: inherit;
-    right: 175px;
+    left: 30px;
   }
   .container-slider .fa-circle-chevron-right {
-    right: 120px;
+    right: 30px;
   }
-
   /* SECTION 2: ESPECIALES */
   .especiales .box-img {
     height: 495px;
@@ -425,7 +427,6 @@
     max-width: 415px;
     height: 460px;
   }
-
   /* SECTION 3: BLOG */
   .blog {
     background-image: url("img/fondo-bg.jpg");
@@ -451,17 +452,6 @@
   }
 }
 @media screen and (min-width: 600px) {
-  /* SECTION: NUESTRA HISTORIA */
-  .nuestra-historia {
-    height: 270px;
-  }
-  .nuestra-historia img {
-    height: 270px;
-  }
-  .nuestra-historia h3 {
-    padding-top: 2.1rem;
-  }
-
   /* FOOTER */
   .footer {
     height: 400px;
@@ -535,16 +525,12 @@
     font-size: 18px;
   }
   .container-slider .fa-solid {
-    top: 66%;
-    transform: translateY(-66%);
+    top: 60%;
+    transform: translateY(-60%);
   }
-
   /* SECTION: NUESTRA HISTORIA */
   .nuestra-historia {
-    height: 310px;
-  }
-  .nuestra-historia img {
-    height: 310px;
+    padding: 2.5rem;
   }
   .nuestra-historia h3 {
     padding-top: 2.1rem;
@@ -566,18 +552,6 @@
     max-width: 400px;
     font-size: 20px;
   }
-  .container-slider .fa-solid {
-    top: 71%;
-    transform: translateY(-71%);
-  }
-  .container-slider .fa-circle-chevron-left {
-    left: inherit;
-    right: 175px;
-  }
-  .container-slider .fa-circle-chevron-right {
-    right: 120px;
-  }
-
   /* SECTION 2: ESPECIALES */
   .especiales {
     display: flex;
@@ -635,26 +609,10 @@
   .navbar .menu-responsive-off a:nth-child(5) {
     padding: 20px 0;
   }
-
   /* PRINCIPAL */
   .container-slider .slider .slider__section .slider__img {
     flex: 0 0 400px;
     width: 400px;
-  }
-  .container-slider .fa-circle-chevron-left {
-    left: inherit;
-    right: 195px;
-  }
-  .container-slider .fa-circle-chevron-right {
-    right: 145px;
-  }
-
-  /* SECTION: NUESTRA HISTORIA */
-  .nuestra-historia {
-    height: 360px;
-  }
-  .nuestra-historia img {
-    height: 360px;
   }
 }
 @media screen and (min-width: 1073px) {
@@ -666,27 +624,10 @@
   .container-slider .slider .slider__section .slider_text-responsive p {
     max-width: 450px;
   }
-  .container-slider .fa-circle-chevron-left {
-    left: inherit;
-    right: 245px;
-  }
-  .container-slider .fa-circle-chevron-right {
-    right: 195px;
-  }
-
-  /* SECTION: NUESTRA HISTORIA */
-  .nuestra-historia {
-    height: 400px;
-  }
-  .nuestra-historia img {
-    height: 400px;
-  }
-
   /* SECTION 2: ESPECIALES */
   .especiales {
     background-size: contain;
   }
-
   /* FOOTER */
   .footer .cajas-footer .secciones {
     padding-top: 2rem;
@@ -695,22 +636,13 @@
     margin-top: 8rem;
   }
 }
-@media screen and (min-width: 1150px) {
-  /* SECTION: NUESTRA HISTORIA */
-  .nuestra-historia {
-    height: 450px;
-  }
-  .nuestra-historia img {
-    height: 450px;
-  }
-}
 @media screen and (min-width: 1470px) {
   /* SECTION 2: ESPECIALES */
   .especiales {
     background-size: cover;
   }
 }
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.scss.map */
+
+
 
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@
 @use 'mixins';
 
 /* RESPONSIVE: CELULARES */
-@media screen and(min-width:405px){
+@media screen and ( min-width:405px){
 	/* SECTION 2: ESPECIALES */
 	.especiales{
 		.box-img{
@@ -22,7 +22,7 @@
 	}
 }
 
-@media screen and(min-width:420px){
+@media screen and (min-width:420px){
 	/* PRINCIPAL */
 	.container-slider{
 
@@ -33,7 +33,7 @@
 	}
 }
 
-@media screen and(min-width:435px){
+@media screen and (min-width:435px){
 	/* PRINCIPAL */
 	.container-slider{
 
@@ -44,7 +44,7 @@
 	}
 }
 
-@media screen and(min-width:450px){
+@media screen and (min-width:450px){
 	/* SECTION 2: ESPECIALES */
 	.especiales{
 		.box-img{
@@ -65,7 +65,7 @@
 }
 
 /* RESPONSIVE: TABLET/ESCRITORIO */
-@media screen and(min-width:470px){
+@media screen and (min-width:470px){
 	/* PRINCIPAL */
 	.container-slider{
 
@@ -80,11 +80,11 @@
 				
 	
 				.slider__img{
-					flex: 0 0 360px;
+					flex: 0 0 50%;
 					order: 3;
 					flex-wrap: nowrap;
 					object-position: center;
-					width: 360px;
+					width: 50%;
 					
 				}
 
@@ -122,17 +122,16 @@
 		}
 	
 		.fa-solid{
-			@include mixins.posicionIcono($top:58%,$transform:translateY(-58%));
+			@include mixins.posicionIcono($top:52%,$transform:translateY(-52%));
 		}
 	
 		.fa-circle-chevron-left{
-			left: inherit;
-			right: 175px;
+			left: 30px;
 		}
 
 
 		.fa-circle-chevron-right{
-			right: 120px;
+			right: 30px;
 		}
 	}
 
@@ -173,23 +172,7 @@
 	}
 }
 
-@media screen and(min-width:600px){
-	/* SECTION: NUESTRA HISTORIA */
-	.nuestra-historia{
-		@include mixins.alturaNuestraHistoria($height:270px);
-
-		img{
-			@include mixins.alturaNuestraHistoria($height:270px);
-		}
-
-		h3{
-			padding : {
-				top: 2.1rem;
-			}
-		}
-		
-	}
-
+@media screen and (min-width:600px){
 	/* FOOTER */
 	.footer{
 		height: 400px;
@@ -263,7 +246,7 @@
 	}
 }
 
-@media screen and(min-width:760px){
+@media screen and (min-width:760px){
 	/* PRINCIPAL */
 	.container-slider{
 
@@ -290,17 +273,13 @@
 		}
 
 		.fa-solid{
-			@include mixins.posicionIcono($top:66%,$transform:translateY(-66%));
+			@include mixins.posicionIcono($top:60%,$transform:translateY(-60%));
 		}
 	}
 
 	/* SECTION: NUESTRA HISTORIA */
 	.nuestra-historia{	
-		@include mixins.alturaNuestraHistoria($height:310px);
-
-		img{
-			@include mixins.alturaNuestraHistoria($height:310px);
-		}
+		padding: 2.5rem;
 
 		h3{
 			padding : {
@@ -309,7 +288,7 @@
 		}
 	}	
 }
-@media screen and(min-width:800px){
+@media screen and (min-width:800px){
 	/* PRINCIPAL */
 	.container-slider{
 
@@ -337,19 +316,6 @@
 			}
 		}
 	
-		.fa-solid{
-			@include mixins.posicionIcono($top:71%,$transform:translateY(-71%));
-		}
-
-		.fa-circle-chevron-left{
-			left: inherit;
-			right: 175px;
-		}
-
-
-		.fa-circle-chevron-right{
-			right: 120px;
-		}
 	}
 
 	/* SECTION 2: ESPECIALES */
@@ -366,7 +332,7 @@
 	}
 }
 
-@media screen and(min-width:813px){
+@media screen and (min-width:813px){
 	/* FOOTER */
 	.footer{
 
@@ -379,7 +345,7 @@
 	}
 }
 
-@media screen and(min-width:880px){
+@media screen and (min-width:880px){
 	/* HEADER */
 	.navbar{
 		.btn-menu{
@@ -439,29 +405,12 @@
 				}
 			}
 		}
-
-		.fa-circle-chevron-left{
-			left: inherit;
-			right: 195px;
-		}
-
-
-		.fa-circle-chevron-right{
-			right: 145px;
-		}
 	}
 
-	/* SECTION: NUESTRA HISTORIA */
-	.nuestra-historia{	
-		@include mixins.alturaNuestraHistoria($height:360px);
 
-		img{
-			@include mixins.alturaNuestraHistoria($height:360px);
-		}
-	}	
 }
 
-@media screen and(min-width:1073px){
+@media screen and (min-width:1073px){
 	/* PRINCIPAL */
 	.container-slider{
 
@@ -482,26 +431,7 @@
 				}
 			}
 		}
-
-		.fa-circle-chevron-left{
-			left: inherit;
-			right: 245px;
-		}
-
-
-		.fa-circle-chevron-right{
-			right: 195px;
-		}
 	} 
-
-	/* SECTION: NUESTRA HISTORIA */
-	.nuestra-historia{
-		@include mixins.alturaNuestraHistoria($height:400px);
-
-		img{
-			@include mixins.alturaNuestraHistoria($height:400px);
-		}
-	}
 
 	/* SECTION 2: ESPECIALES */
 	.especiales{
@@ -525,20 +455,7 @@
 	
 }
 
-@media screen and(min-width:1150px){
-	/* SECTION: NUESTRA HISTORIA */
-	.nuestra-historia{
-		@include mixins.alturaNuestraHistoria($height:450px);
-
-		img{
-			@include mixins.alturaNuestraHistoria($height:450px);	
-		}
-	}
-
-	
-}
-
-@media screen and(min-width:1470px){
+@media screen and (min-width:1470px){
 	/* SECTION 2: ESPECIALES */
 	.especiales{
 		background-size: cover;
